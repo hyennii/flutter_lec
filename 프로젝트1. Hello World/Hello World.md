@@ -25,4 +25,4 @@ void main() {
 }
 ```
 
-<img src="https://github.com/user-attachments/assets/4e94d6ee-2884-4a1f-bb3d-216afda7b72b" width="300" alt="Simulator Screenshot">
+<img src="https://github.com/user-attachments/assets/4e94d6ee-2884-4a1f-bb3d-216afda7b72b" width="450" alt="Simulator Screenshot">
