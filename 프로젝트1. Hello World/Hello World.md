@@ -25,4 +25,4 @@ void main() {
 }
 ```
 
-![스크린샷 2024-07-30 오후 11 24 25](https://github.com/user-attachments/assets/f9e9cadc-1a15-4616-bef6-ea3d6d267255)
+<img width="463" alt="스크린샷 2024-07-30 오후 11 24 25" src="https://github.com/user-attachments/assets/f9e9cadc-1a15-4616-bef6-ea3d6d267255">
