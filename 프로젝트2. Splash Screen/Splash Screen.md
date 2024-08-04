@@ -224,3 +224,12 @@ SizedBox : 크기가 있는 박스, padding과 비슷
 ```dart
 SizedBox(height: 28.0),     //높이 28인 박스
 ```
+
+<img src="https://github.com/user-attachments/assets/39f5eb76-a340-4d5e-9b35-bbd894dc920f" width="450" alt="Simulator Screenshot">
+
+### Show Context Action
+1. 삭제하고싶은 위젯이 있을 때
+- 해당 위젯 위에 커서를 두고 우측클릭해서 Show Context Action 또는 단축키 누른 후 remove
+
+2. 추가할 때
+- 단축키 누른 후 Wrap with widget 후 위젯 입력
