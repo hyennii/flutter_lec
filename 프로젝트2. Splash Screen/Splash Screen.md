@@ -194,3 +194,27 @@ class HomeScreen extends StatelessWidget {      //클래스명 주면 생성자�
   }
 }
 ```
+
+### <p style="color:skyblue">Padding 위젯 사용법</p>
+- padding은 위젯 하나만 받음
+```dart
+body: Padding(
+    padding: EdgeInsets.symmetric(    //symmetric : 대칭
+        horizontal: 32.0,
+    ),   //padding 파라미터 입력 필수
+    child:Column(
+        mainAxisAlignment: MainAxisAlignment.center,    
+        children: [   
+        Image.asset('asset/img/logo.png',),
+        CircularProgressIndicator(
+            color: Colors.white,
+        ),
+        ],
+    ),
+),
+```
+
+**hot reload
+- 앱 전체를 다시 시작하지 않더라도 runApp 안의 모든 위젯들의 build함수 재실행 가능
+- 스크린이 여러개일 때 유용
+- 수정 사항이 build함수 외부라면 재실행, 내부라면 hot reload 가능
