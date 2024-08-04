@@ -45,5 +45,14 @@ void main() {
     ),
   );
 }
+```
 
+### <p style="color:skyblue">HexCode 색상 사용법</p>
+- 구글에 color picker 검색해서 rgb 색상 선택 가능
+- Colors. 하면 Material.Dart에서 기본으로 제공해주는 색상 선택 가능하고,
+<br>
+정확한 색상 표현하고 싶으면 Color 클래스를 인스턴스화하여 값 넣어주기
+```dart
+    /// 335CB0
+    backgroundColor: Color(0xFF335CB0),   //0xFF 무조건 붙여주기
 ```
