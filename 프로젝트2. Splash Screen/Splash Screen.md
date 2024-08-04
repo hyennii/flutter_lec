@@ -73,3 +73,17 @@ void main() {
         ],
     ),
 ```
+
+### <p style="color:skyblue">CircularProgressIndicator 위젯 사용법</p>
+기본으로 제공되는 위젯이 많아 유용함
+```dart
+    body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,    //주축에서 정렬
+        children: [   //list라 여러개 등록 가능
+        Image.asset('asset/img/logo.png',),
+        CircularProgressIndicator(
+            color: Colors.white,
+        ),
+        ],
+    ),
+```
