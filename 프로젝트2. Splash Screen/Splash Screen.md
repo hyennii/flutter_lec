@@ -30,3 +30,20 @@
     - asset/img/        # asset폴더의 img 폴더의 이미지 모두 사용가능
 ```
 - 변경 후 우측 상단 Pub get 눌러야 변경된 사항 적용됨(콘솔에 exit code 0 나오면 성공, 1이 나오면 실패)
+
+### <p style="color:skyblue">Asset 이미지 등록법</p>
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blue,
+        body: Image.asset('asset/img/logo.png'),
+      ),
+    ),
+  );
+}
+
+```
