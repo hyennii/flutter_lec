@@ -169,3 +169,28 @@ class HomeScreen extends StatelessWidget {
 }
 ```
 - StatelessWidget을 상속받는 어떤 하나의 클래스를 만들기만 하면 여러개의 위젯을 한번에 보여줄 수 있는 위젯을 새로 정의할 수 있음
+
+** stless 단축어 사용
+: StatelessWidget을 좀 더 간단하게 선언할 수 있음
+```dart
+class HomeScreen extends StatelessWidget {      //클래스명 주면 생성자까지 자동으로 클래스명 입력됨
+    const HomeScreen({super.key});        //자동 생성됨
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      /// 335CB0
+      backgroundColor: Color(0xFF335CB0),   //0xFF 무조건 붙여주기
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,    //주축에서 정렬
+        children: [   //list라 여러개 등록 가능
+          Image.asset('asset/img/logo.png',),
+          CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ],
+      ),
+    );  
+  }
+}
+```
