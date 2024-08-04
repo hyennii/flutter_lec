@@ -87,3 +87,85 @@ void main() {
         ],
     ),
 ```
+
+### <p style="color:skyblue">StatelessWidget 사용법</p>
+위젯 만들기
+
+1. 클래스명 짓기
+```dart
+class HomeScreen extends StatelessWidget {    //위젯에 해당되는 클래스인걸 알려주기 위해 extends
+}
+```
+- StatelessWidget는 Material.dart에서 불러올 수 있는 것임
+- 모든 StatelessWidget은 가장 기본적으로 build 함수 존재해야함
+<br>
+<br>
+
+2. build 함수(자동완성됨)
+```dart
+@override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+```
+- 여러개의 widget을 하나의 widget으로 묶는 역할 할 수 있음
+<br>
+<br>
+
+3. build 함수의 정의(Scaffold 반환)
+```dart
+@override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      /// 335CB0
+      backgroundColor: Color(0xFF335CB0),   //0xFF 무조건 붙여주기
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,    //주축에서 정렬
+        children: [   //list라 여러개 등록 가능
+          Image.asset('asset/img/logo.png',),
+          CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ],
+      ),
+    );    //마지막은 세미콜론
+  }
+```
+<br>
+<br>
+
+4. 일반 위젯처럼 사용
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: HomeScreen(),
+    ),
+  );
+}
+
+/// StatelessWidget
+class HomeScreen extends StatelessWidget {    
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      /// 335CB0
+      backgroundColor: Color(0xFF335CB0),   //0xFF 무조건 붙여주기
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,    //주축에서 정렬
+        children: [   //list라 여러개 등록 가능
+          Image.asset('asset/img/logo.png',),
+          CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ],
+      ),
+    );    //마지막은 세미콜론
+  }
+}
+```
+- StatelessWidget을 상속받는 어떤 하나의 클래스를 만들기만 하면 여러개의 위젯을 한번에 보여줄 수 있는 위젯을 새로 정의할 수 있음
