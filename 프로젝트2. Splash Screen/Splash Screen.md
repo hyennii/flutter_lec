@@ -56,3 +56,20 @@ void main() {
     /// 335CB0
     backgroundColor: Color(0xFF335CB0),   //0xFF 무조건 붙여주기
 ```
+
+### <p style="color:skyblue">Column 위젯 사용법</p>
+```dart
+    body: Center(
+        child : Image.asset('asset/img/logo.png'),      //child위젯은 하나만 입력 가능
+    ),
+```
+- Column위젯 : 세로로 children파라미터에 있는 위젯들을 배치할 수 있음
+- mainAxisAlignment를 변경함으로써 세로로 어떻게 정렬할지 정할 수 있음
+```dart
+    body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,    //주축에서 정렬
+        children: [   //list라 여러개 등록 가능
+        Image.asset('asset/img/logo.png',)
+        ],
+    ),
+```
