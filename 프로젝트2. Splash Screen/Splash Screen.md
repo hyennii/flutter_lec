@@ -218,3 +218,9 @@ body: Padding(
 - 앱 전체를 다시 시작하지 않더라도 runApp 안의 모든 위젯들의 build함수 재실행 가능
 - 스크린이 여러개일 때 유용
 - 수정 사항이 build함수 외부라면 재실행, 내부라면 hot reload 가능
+
+### <p style="color:skyblue">SizedBox 위젯 사용법</p>
+SizedBox : 크기가 있는 박스, padding과 비슷
+```dart
+SizedBox(height: 28.0),     //높이 28인 박스
+```
